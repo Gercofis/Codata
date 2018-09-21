@@ -14,11 +14,8 @@ class MonArticleCell: UITableViewCell {
 
     @IBOutlet weak var articleIV: UIImageView!
     @IBOutlet weak var dateLBL: UILabel!
-
     @IBOutlet weak var priceLBL: UILabel!
-
     @IBOutlet weak var nomLBL: UILabel!
-
     @IBOutlet weak var shopLBL: UILabel!
 
     var article: Article!

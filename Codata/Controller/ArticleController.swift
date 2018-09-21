@@ -12,7 +12,7 @@ import UIKit
 let articleCell = "MonArticleCell"
 
 class ArticleController: UIViewController {
-
+//let registerNib =
     var liste: Liste!
     var articles: [Article] = []
 
@@ -26,6 +26,7 @@ class ArticleController: UIViewController {
 
         let nib = UINib(nibName: articleCell, bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: articleCell)
+
 
         NotificationCenter.default.addObserver(self, selector: #selector(reload), name: Notification.Name("delete"), object: nil)
     }

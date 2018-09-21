@@ -22,7 +22,7 @@ class ListeController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
-        
+       // naleTF.delegate = self
         updateListe()
 
     }
@@ -64,13 +64,15 @@ extension ListeController: UITableViewDelegate, UITableViewDataSource{
     return UITableViewCell()
     }
 
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 75
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "Article", sender: listes[indexPath.row])
     }
 
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 75
-    }
+
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let listeASupprimer = listes[indexPath.row]

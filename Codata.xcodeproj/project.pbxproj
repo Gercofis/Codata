@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B22695D721408151005C6894 /* ArticleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22695D621408151005C6894 /* ArticleController.swift */; };
 		B22695D921408185005C6894 /* AddArticleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22695D821408185005C6894 /* AddArticleController.swift */; };
-		B22695DB214081DF005C6894 /* AllArticleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22695DA214081DF005C6894 /* AllArticleController.swift */; };
+		B22695DB214081DF005C6894 /* AllArticlesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22695DA214081DF005C6894 /* AllArticlesController.swift */; };
 		B228F0E62148628C009E1479 /* MonArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B228F0E42148628C009E1479 /* MonArticleCell.swift */; };
 		B228F0E72148628C009E1479 /* MonArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B228F0E52148628C009E1479 /* MonArticleCell.xib */; };
 		B243F6262120AA8400427275 /* MaTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B243F6252120AA8400427275 /* MaTabBar.swift */; };
@@ -34,7 +34,7 @@
 /* Begin PBXFileReference section */
 		B22695D621408151005C6894 /* ArticleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleController.swift; sourceTree = "<group>"; };
 		B22695D821408185005C6894 /* AddArticleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArticleController.swift; sourceTree = "<group>"; };
-		B22695DA214081DF005C6894 /* AllArticleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllArticleController.swift; sourceTree = "<group>"; };
+		B22695DA214081DF005C6894 /* AllArticlesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllArticlesController.swift; sourceTree = "<group>"; };
 		B228F0E42148628C009E1479 /* MonArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonArticleCell.swift; sourceTree = "<group>"; };
 		B228F0E52148628C009E1479 /* MonArticleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonArticleCell.xib; sourceTree = "<group>"; };
 		B243F6252120AA8400427275 /* MaTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaTabBar.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 				B243F6252120AA8400427275 /* MaTabBar.swift */,
 				B22695D621408151005C6894 /* ArticleController.swift */,
 				B22695D821408185005C6894 /* AddArticleController.swift */,
-				B22695DA214081DF005C6894 /* AllArticleController.swift */,
+				B22695DA214081DF005C6894 /* AllArticlesController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -270,7 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B243F62B2120DC9100427275 /* CoreDataHelper.swift in Sources */,
-				B22695DB214081DF005C6894 /* AllArticleController.swift in Sources */,
+				B22695DB214081DF005C6894 /* AllArticlesController.swift in Sources */,
 				B28BEE2A212AB0AE00B56DBB /* Extensions.swift in Sources */,
 				B2F4C01F2121B47D00A10E49 /* ListeCell.swift in Sources */,
 				B2F4C0212121B4C800A10E49 /* ViewShadow.swift in Sources */,
