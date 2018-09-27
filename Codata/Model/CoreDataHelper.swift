@@ -37,18 +37,7 @@ class CoreDataHelper {
     func save() {
         appDel.saveContext()
     }
-    func saveArticle(nom: String?, shop: String?, prix: String?, image: UIImage?, liste: Liste) {
-        let new = Article(context: context)
-        new.date = Date()
-        new.nom = nom
-        new.shop = shop
-        new.image = image
-        if let str = prix, let double = Double(str){
-            new.prix = double
-        }
-        new.liste = liste
-        save()
-    }
+
 
     func deleteListe(_ liste: Liste){
         if let articles = liste.article?.allObjects as?[Article] {
@@ -89,7 +78,7 @@ class CoreDataHelper {
         }
     }
 
-    //MARK: Logique Entity Liste /////
+    //MARK: Logique Entity Liste
     func saveListe(_ string: String?) {
         guard let texte = string, texte != "" else { return }
         let nouvelleListe = Liste(context: context)
@@ -105,11 +94,6 @@ class CoreDataHelper {
         fetchRequest.sortDescriptors = [sortDescriptor]
         do {
             let listes = try context.fetch(fetchRequest)
-//            for l in listes {
-//                let leNom :String? = l.nom ?? "pas de nom"
-//                print(leNom)
-//
-//            }
             completion?(listes)
 
         } catch {
@@ -117,7 +101,19 @@ class CoreDataHelper {
             print(error.localizedDescription)
         }
     }
-//    func deleteListe(_ liste: Liste) {
-//
+    //MARK: Logique ENTITY Article
+
+    func saveArticle(nom: String?, shop: String?, prix: String?, image: UIImage?, liste: Liste) {
+        let new = Article(context: context)
+        new.date = Date()
+        new.nom = nom
+        new.shop = shop
+        new.image = image
+        if let str = prix, let double = Double(str){
+            new.prix = double
+        }
+        new.liste = liste
+        save()
+    }
 }
 
